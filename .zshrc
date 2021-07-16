@@ -31,7 +31,7 @@ bindkey "^[[B" history-beginning-search-forward-end
 export GOPATH="$(go env GOPATH)"
 
 # cs143 setup
-export PATH="$PATH:/home/akash/cool/bin"
+export PATH="$PATH:$HOME/cool/bin"
 # neofetch
 
 # doom emacs setup
