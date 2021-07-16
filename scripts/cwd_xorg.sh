@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Open a terminal window in the same directory as the currently active window.
 DIR="$(readlink -e /proc/"$(pgrep -P "$(xdo pid)" | head -n 1)"/cwd)"
