@@ -12,6 +12,6 @@ interval=0
 while true; do
 	t=$(time_and_date)
 	bat=$(battery)
-	xsetroot -name "$t | $bat"
+	xsetroot -name " $t | $bat"
 	sleep 60
 done
