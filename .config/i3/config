@@ -194,3 +194,7 @@ exec nitrogen --restore
 
 # check spurious power button clicks: keyboard debugging
 bindsym XF86PowerOff exec --no-startup-id notify-send "spurious power button click"
+
+# brightness keys
+bindsym F5 exec xbacklight -inc 5 && notify-send "Brightness: $($HOME/scripts/blocks/brightness/get_brightness)" && $refresh_i3status
+bindsym F4 exec xbacklight -dec 5 && notify-send "Brightness: $($HOME/scripts/blocks/brightness/get_brightness)" && $refresh_i3status
