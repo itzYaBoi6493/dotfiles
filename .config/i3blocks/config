@@ -14,15 +14,20 @@ separator_block_width=15
 command=echo "$($HOME/.config/i3blocks/battery/battery)"
 interval=10
 
-[documentation]
-full_text=Documentation
-website=https://vivien.github.io/i3blocks
-command=xdg-open "$website"
-color=#f12711
+#[documentation]
+#full_text=Documentation
+#website=https://vivien.github.io/i3blocks
+#command=xdg-open "$website"
+#color=#f12711
 
-[greetings]
-color=#f5af19
-command=echo "Hello, $USER!"
+[user]
+color=#00ffff
+command=echo "$USER"
+interval=once
+
+[host]
+color=#00ff00
+command=echo "$(cat /etc/hostname)"
 interval=once
 
 [time]
